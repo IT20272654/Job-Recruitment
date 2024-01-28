@@ -1,8 +1,17 @@
-import React from 'react'
+import Banner from '../components/Banner'
+import React, { useState } from "react";
+
 
 const Home = () => {
+    const [query, setQuery] = useState("");
+    const haddleInputChange = (event) => {
+        setQuery(event.target.value)
+    }
+    console.log(query)
     return (
-        <div className="text-blue">Home Page</div>
+        <div>
+            <Banner query={query} haddleInputChange={haddleInputChange}/>
+        </div>
     )
 }
 
