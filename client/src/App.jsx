@@ -1,14 +1,11 @@
 import './App.css'
+import Navbar from './components/navbar';
 
 function App() {
   return <>
-  <h1 className="text-3xl font-bold text-primary">
-      Hello world!
-    </h1>
-    {/* our clour setup is done*/}
-    {/* font setup */}
-  </>;
+       <Navbar/>
   
+  </>;
 }
 
-export default App
+export default App;

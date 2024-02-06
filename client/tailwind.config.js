@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily:{
+      'roboto': "'Roboto','sans-serif'"
+    },
     extend: {
       colors: {
         'primary': '#5E3BEE',
