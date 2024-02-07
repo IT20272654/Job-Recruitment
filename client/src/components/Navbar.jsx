@@ -1,8 +1,9 @@
+import { useEffect } from "react";
 import { useState } from "react";
 
 //import logo
-import logo from '../assets/logo.svg'; 
-/* logo didnt came , vedio time 12.58*/
+import logo from "../assets/logo.svg"; 
+
 
 const Navbar = () => {
     const[isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,8 +32,12 @@ const Navbar = () => {
             {/* for large devices */}
             <div>
                 {/* for logo */}
+                <div className="cursor-pointer">
+                    <img src = {logo} alt="" className="h-10"/>
+                </div>
+                {/* menu items for large devices */}
                 <div>
-                    <img src = {logo} alt=""/>
+                  <a href="/n"></>13.25
                 </div>
             </div>
          </nav>
