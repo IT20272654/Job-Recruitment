@@ -7,7 +7,6 @@ const Location = ({haddleChange}) => {
     <div>
         <h4 className='text-lg font medium mb-2'>Location</h4>
         <div>
-
             <label className='sidebar-label-container'>
                 <input
                  type="radio" 
@@ -47,9 +46,6 @@ const Location = ({haddleChange}) => {
              tittle="Boston" 
              name="test"
             /> 
-
-
-
         </div>
     </div>
   )
