@@ -141,12 +141,21 @@ li {
   border-color: #f7f7f7;
 }
 
-
+.option
+{
+  option[value=""] {
+    display: red;
+  }
+  option {
+    color: black;
+  }
+}
 
 /* create a job page */
 
 .create-job-flex{
   @apply flex flex-col lg:flex-row items-center justify-between gap-8;
+  
 }
 
 .create-job-input{
