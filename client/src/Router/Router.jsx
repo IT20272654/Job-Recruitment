@@ -4,6 +4,7 @@ import Home from "../Pages/Home";
 import About from "../Pages/About";
 import JobPostingData from "../sidebar/JobPostingData";
 import PostJob from "../Pages/PostJob";
+import JobDetails from "../Pages/JobDetails";
 
 
 
@@ -12,12 +13,21 @@ const router = createBrowserRouter([
       path: "/",
       element: <App/>,
       children: [
-        { path: "/", element:<Home></Home> },
+        { path: "/",
+         element:<Home></Home>
+        },
         { path: "/post-job", 
         element:<PostJob/>
+        },
+        { path: "/job/:id", 
+        element:<JobDetails/>
         }
       ],
     },
   ]);
 
   export default router;
+
+
+
+
