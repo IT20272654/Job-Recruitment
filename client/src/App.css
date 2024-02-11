@@ -141,15 +141,6 @@ li {
   border-color: #f7f7f7;
 }
 
-.option
-{
-  option[value=""] {
-    display: red;
-  }
-  option {
-    color: black;
-  }
-}
 
 /* create a job page */
 
@@ -172,4 +163,7 @@ li {
 
 .bg-color{
   background-image: url("backgroundImage.jpg");
+}
+.form-color{
+  background-color: rgb(221, 221, 221);
 }
