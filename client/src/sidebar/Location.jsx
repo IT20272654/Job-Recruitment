@@ -18,32 +18,56 @@ const Location = ({haddleChange}) => {
             </label>
             <InputField
              haddleChange={haddleChange} 
-             value="london" 
-             tittle="London" 
+             value="Western Province" 
+             tittle="Western Province" 
              name="test"
              />
             <InputField
              haddleChange={haddleChange} 
-             value="seattle" 
-             tittle="Seattle" 
+             value="Southern Province" 
+             tittle="Southern Province" 
              name="test"
              />
             <InputField
              haddleChange={haddleChange} 
-             value="madrid" 
-             tittle="Madrid" 
+             value="Central Province" 
+             tittle="Central Province" 
              name="test"
              />
-            <InputField
+             <InputField
              haddleChange={haddleChange} 
-             value="san francisco" 
-             tittle="San Francisco" 
+             value="Eastern Province" 
+             tittle="Eastern Province " 
+             name="test"
+             /> 
+             <InputField
+             haddleChange={haddleChange} 
+             value="Northern Province" 
+             tittle="Northern Province" 
+             name="test"
+             /> 
+             <InputField
+             haddleChange={haddleChange} 
+             value="North Western Province" 
+             tittle="North Western Province" 
              name="test"
              /> 
             <InputField
              haddleChange={haddleChange} 
-             value="boston" 
-             tittle="Boston" 
+             value="North Central Province" 
+             tittle="North Central Province" 
+             name="test"
+             /> 
+            <InputField
+             haddleChange={haddleChange} 
+             value="Uva Province" 
+             tittle="Uva Province" 
+             name="test"
+            /> 
+            <InputField
+             haddleChange={haddleChange} 
+             value="Uva Province" 
+             tittle="Uva Province" 
              name="test"
             /> 
         </div>
