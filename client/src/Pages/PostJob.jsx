@@ -42,126 +42,155 @@ const PostJob = () => {
     
         return (
 
-              <><div className='bg-color'>
-                <table align='center'>
-                    <div className='max-w-screen-2xl container mx-auto xl:px-24 px-4 md:py-20 py-24'>
-                        <h1 className='Heading'>Post your <span className='text-blue'>Job</span> here...</h1>
-                        <p className='text-lg text-black/70 mb-8'>Thousands of jobs in the computer, engineering and technology sectors are waiting for you.</p>
-                    </div>
-                </table>
+            //   <><div className='bg-color'>
+            //     <table align='center'>
+            //         <div className='max-w-screen-2xl container mx-auto xl:px-24 px-4 md:py-20 py-24'>
+            //             <h1 className='Heading'>Post your <span className='text-blue'>Job</span> here...</h1>
+            //             <p className='text-lg text-black/70 mb-8'>Thousands of jobs in the computer, engineering and technology sectors are waiting for you.</p>
+            //         </div>
+            //     </table>
 
-            </div><div className="form-color"><div className="max-w-screen-2xl container mx-auto xl:px-24 px-4"> <br/><div>
+            // </div>
            
+            <div className=""><br/><br/>
+            <div className="form-color"><div className="max-w-screen-2xl container mx-auto xl:px-24 px-4"> <br/><div>
+           
+            
 
 
-                        {/*Post job form*/}
-                        <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
-                        
-                            <div className="create-job-flex ">
-                                <div className="lg:w-1/2 w-full">
-                                    <label className="block mb-2 text-lg">Job Title</label>
-                                    <input type="text" placeholder={"Web Developer"}
-                                        {...register("jobTitle")} className="create-job-input" />
-                                </div>
-                                <div className="lg:w-1/2 w-full">
-                                    <label className="block mb-2 text-lg">Company Name</label>
-                                    <input type="text" placeholder={"Ex: Microsoft"}
-                                        {...register("companyName")} className="create-job-input" />
-                                </div>
-                            </div>
+          {/* <div className="mb-20 text-center">
+            <p className="text-xl text-headingcolor font-semibold mb-5">Get In Touch</p>
+            <h2 className="md:text-5xl text-4xl text-headingcolor font-bold">Contact me
+            </h2>
+          </div> */}
 
-                            <div className="create-job-flex">
-                                <div className="lg:w-1/2 w-full">
-                                    <label className="block mb-2 text-lg">Minimum Salary</label>
-                                    <input type="text" placeholder={"$20k"}
-                                        {...register("minPrice")} className="create-job-input" />
-                                </div>
-                                <div className="lg:w-1/2 w-full">
-                                    <label className="block mb-2 text-lg">Maximum Salary</label>
-                                    <input type="text" placeholder={"$120k"}
-                                        {...register("maxPrice")} className="create-job-input" />
-                                </div>
-                            </div>
 
-                            <div className="create-job-flex">
-                                <div className="lg:w-1/2 w-full">
-                                    <label className="block mb-2 text-lg">Salary Type</label>
-                                    <select {...register("salaryType")} className="create-job-input">
-                                        <option value="">Choose Your Type</option>
-                                        <option value="Hourly">Hourly</option>
-                                        <option value="Monthly">Monthly</option>
-                                        <option value="Yearly">Yearly</option>
-                                    </select>
-                                </div>
-                                <div className="lg:w-1/2 w-full">
-                                    <label className="block mb-2 text-lg">Job Location</label>
-                                    <input type="text" placeholder={"Ex: Colombo"}
-                                        {...register("jobLocation")} className="create-job-input" />
-                                </div>
-                            </div>
+    {/* Job posting form */}
+      <div className="md:w-2/3 mx-auto mb-20">
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+         
+          <div className="flex flex-col sm:flex-row gap-8 items-center mb-8">
+            <div className="sm:w-1/2 w-full">
+              <label htmlFor="minPrice" className="text-base text-headingcolor w-full">Job Title</label>
+              <input type="text" {...register("jobTitle")} className="block border border-primary rounded-lg py-2 mt-2 w-full" />
+            </div>
 
-                            <div className="create-job-flex">
-                                <div className="lg:w-1/2 w-full">
-                                    <label className="block mb-2 text-lg">Job Posting Date</label>
-                                    <input type="date" placeholder={"Ex: 02/12/2024"}
-                                        {...register("postingDate")} className="create-job-input" />
-                                </div>
-                                <div className="lg:w-1/2 w-full">
-                                    <label className="block mb-2 text-lg">Experience Level</label>
-                                    <select {...register("experienceLevel")} className="create-job-input">
-                                        <option value="">Choose Your Experience Level</option>
-                                        <option value="Any experience">Any experience</option>
-                                        <option value="Work remotely">Work remotely</option>
-                                        <option value="Intership">Intership</option>
-                                    </select>
-                                </div>
-                            </div>
+            <div className="sm:w-1/2 w-full">
+              <label htmlFor="maxPrice" className="text-base text-headingcolor w-full">Company Name</label>
+              <input type="text"{...register("companyName")} className="block border border-primary rounded-lg py-2 mt-2 w-full" />
+            </div>
+          </div>
 
-                            <div>
-                                <label className="block mb-2 text-lg">Required Skill Sets:</label>
-                                <CreatableSelect
-                                    defaultValue={selectedOption}
-                                    onChange={setSelectedOption}
-                                    options={options}
-                                    isMulti
-                                    className="create-job-input mb-2 text-lg" />
-                            </div>
+          <div className="flex flex-col sm:flex-row gap-8 items-center mb-8">
+            <div className="sm:w-1/2 w-full">
+              <label htmlFor="jobTitle" className="text-base text-headingcolor w-full">Minimum Salary</label>
+              <input type="text" {...register("minPrice")} 
+              className="block border border-primary rounded-lg py-2 mt-2 w-full" />
+            </div>
 
-                            <div className="create-job-flex">
-                                <div className="lg:w-1/2 w-full">
-                                    <label className="block mb-2 text-lg">Company Logo</label>
-                                    <input type="url" placeholder={"Paste your company url logo here"}
-                                        {...register("companyLogo")} className="create-job-input" />
-                                </div>
-                                <div className="lg:w-1/2 w-full">
-                                    <label className="block mb-2 text-lg">Employeement Type</label>
-                                    <select {...register("employmentType")} className="create-job-input">
-                                        <option value="">Choose Your Employee Type</option>
-                                        <option value="Full-time">Full-time</option>
-                                        <option value="Part-time">Part-time</option>
-                                        <option value="Temporary">Temporary</option>
-                                    </select>
-                                </div>
-                            </div>
+            <div className="sm:w-1/2 w-full">
+              <label htmlFor="companyName" className="text-base text-headingcolor w-full">Maximum Salary</label>
+              <input type="text" {...register("maxPrice")} className="block border border-primary rounded-lg py-2 mt-2 w-full" />
+            </div>
+          </div>
 
-                            <div className="w-full">
-                                <label className="block mb-2 text-lg">Job Description</label>
-                                <textarea className="w-full pl-3 py-1.5 focus:outline-none"
-                                    rows={6}
-                                    placeholder="Job Description"
-                                    {...register("description")} />
-                            </div>
+          <div className="w-full mb-8">
+            <label htmlFor="salaryType" className="text-base text-headingcolor w-full">Salary Type</label>
+            <select {...register("salaryType")} className="block border border-primary rounded-lg py-2 px-2 mt-2 w-full">
+            <option value="">Choose Your Type</option>
+             <option value="Hourly">Hourly</option>
+             <option value="Monthly">Monthly</option>
+             <option value="Yearly">Yearly</option>
+            </select>
+          </div>
 
-                            <div className="w-full">
-                                <label className="block mb-2 text-lg">Job Posted By</label>
-                                <input type="email" placeholder={"Company Email"}
-                                    {...register("postedBy")} className="create-job-input" />
-                            </div>
+          <div className="w-full mb-8">
+            <label htmlFor="jobLocation" className="text-base text-headingcolor w-full">Location</label>
+            <select {...register("jobLocation")} className="block border border-primary rounded-lg py-2 px-2 mt-2 w-full">
+            <option value="">Choose Location</option>
+            <option value="Western Province">Western Province</option>
+            <option value="Southern Province">Southern Province</option>
+            <option value="Central Province">Central Province</option>
+            <option value="Eastern Province">Eastern Province</option>
+            <option value="Northern Province">Northern Province</option>
+            <option value="North Western Province">North Western Province</option>
+            <option value="North Central Province">North Central Province</option>
+            <option value="Uva Province">Uva Province</option>
+            <option value="Uva Province">Uva Province</option>
+            </select>
+          </div>
 
-                            <input type="submit" className="block mt-12 bg-blue text-white font-semibold px-8 py-2 rounded-sm cursor-pointer" /><br/><br/><br/><br/><br/><br/><br/>
-                        </form>
-                    </div>
-                </div></div></>
+          <div className="flex flex-col sm:flex-row gap-8 items-center mb-8">
+            <div className="sm:w-1/2 w-full">
+              <label htmlFor="postingDate" className="text-base text-headingcolor w-full">Job Posting Date</label>
+              <input type="date" {...register("postingDate")}
+              className="block border border-primary rounded-lg py-2 mt-2 w-full" />
+            </div>
+
+            <div className="sm:w-1/2 w-full">
+              <label htmlFor="postingDate" className="text-base text-headingcolor w-full">Company Logo</label>
+              <input type="url" placeholder={"Paste your company url logo here"} {...register("companyLogo")}
+              className="block border border-primary rounded-lg py-2 mt-2 w-full" />
+            </div>
+          </div>
+
+          <div className="w-full mb-8">
+            <label htmlFor="experienceLevel" className="text-base text-headingcolor w-full">Experience Level</label>
+            <select {...register("experienceLevel")} className="block border border-primary rounded-lg py-2 px-2 mt-2 w-full">
+            <option value="">Choose Your Experience Level</option>
+            <option value="Any experience">Any experience</option>
+            <option value="Work remotely">Work remotely</option>
+            <option value="Intership">Intership</option>
+            </select>
+          </div>
+
+          <div className="w-full mb-8">
+              <label htmlFor="skills" className="text-base text-headingcolor w-full">Required Skill Sets:</label>
+              <CreatableSelect
+                defaultValue={selectedOption}
+                onChange={setSelectedOption}
+                options={options}
+                isMulti
+                className="block border border-primary rounded-lg py-2 mt-2 w-full" />
+          </div>
+
+          <div className="w-full mb-8">
+            <label htmlFor="experienceLevel" className="text-base text-headingcolor w-full">Experience Level</label>
+            <select {...register("employmentType")} className="block border border-primary rounded-lg py-2 px-2 mt-2 w-full">
+            <option value="">Choose Your Employee Type</option>
+            <option value="Full-time">Full-time</option>
+            <option value="Part-time">Part-time</option>
+            <option value="Temporary">Temporary</option>
+            </select>
+          </div>
+
+           
+          <div className="w-full mb-8">
+            <label htmlFor="description" className="text-base text-headingcolor w-full">Description</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Type your description..." {...register("description")}className="block border border-primary rounded-lg py-2 px-2 mt-2 w-full"></textarea>
+          </div>
+         
+          <div className="w-36 mx-auto border rounded-lg">
+          <input type="submit" value="Submit" className="btn-primary py-3 bg-primary px-8 text-white font-medium rounded-b-md cursor-pointer inline-block w-full "/>
+          </div>
+          <br/><br/>
+        </form>
+      </div>
+      
+      </div>
+    
+      </div>
+       <footer class="sticky-footer">
+         <ul>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">Services</a></li>
+           <li><a href="#">Portfolio</a></li>
+           <li><a href="#">Articles</a></li>
+           <li><a href="#">Contact</a></li>
+         </ul>
+        </footer><br/><br/><br/>
+       </div>
+      </div>
         )
     }
 
