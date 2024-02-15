@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -10,20 +12,24 @@ const Navbar = () => {
 
 const navItem = [
   {path: "/", title: "Home"},
+  {path: "/Search", title: "Available Jobs"},
   {path: "/post-job", title: "Post A Job"},
   {path: "/my-job", title: "My Jobs"},
-  {path: "/salary", title: "Salary Estimate"},
   {path: "/contact-us", title: "Contact Us"},
-  {path: "/about-us", title: "About Us"},
 ]
 
   return (
     <div>
-      <header className='max-w-screen-2xl mx-auto xl:px-24 px-4'>
+
+      
+
+
+      <header className='cardd'>
       <nav className='flex justify-between items-center py-6'>
         <a href="/" className="flex items-center gap-2 text-2xl text-black">
-          <span>Job Eka</span>
+        <a href="/"><img src={logo} alt="" /></a>
         </a>
+        
         {/* nav items for large devices*/}
         <ul className='hidden md:flex gap-12'>
           {
@@ -41,11 +47,13 @@ const navItem = [
         </ul>
 
         {/* sign up and login button */}
+        {/* <div>
+           <Link to="/login" className='px-8 py-3 bg-primary text-xl text-white rounded hover:bg-body hover:text-white transition-all duration-300'>Login</Link>
+           
+        </div> */}
         <div>
-           <Link to="/login" className='py-2 px-5 border rounded'>Login</Link>
-           <Link to="/sign-up" className='py-2 px-5 border rounded bg-blue'>Sign up</Link>
+        <Link to="/sign-up" className='px-8 py-3 bg-primary text-xl text-white rounded hover:bg-body hover:text-white transition-all duration-300'>Sign up</Link>
         </div>
-
       {/* mobile menu */}
 
 
