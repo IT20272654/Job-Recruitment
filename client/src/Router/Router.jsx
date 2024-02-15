@@ -1,10 +1,11 @@
 import {createBrowserRouter} from "react-router-dom";
 import App from "../App";
 import Home from "../Pages/Home";
-import About from "../Pages/About";
 import JobPostingData from "../sidebar/JobPostingData";
 import PostJob from "../Pages/PostJob";
 import JobDetails from "../Pages/JobDetails";
+import About from "../Pages/About";
+import Search from "../Pages/Search";
 
 
 
@@ -21,6 +22,9 @@ const router = createBrowserRouter([
         },
         { path: "/job/:id", 
         element:<JobDetails/>
+        },
+        { path: "/Search", 
+        element:<Search/>
         }
       ],
     },
