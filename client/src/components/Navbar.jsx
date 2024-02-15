@@ -29,8 +29,10 @@ const Navbar = () => {
     
         
     return (
-      <header>
-         <nav className="py-4 md:px-12 px-4 bg-white">
+      <header className="w-full fixed top-0 left-0 right-0">
+         <nav className={`py-4 md:px-12 px-4 bg-white ${
+          isSticky ? "sticky top-0 right-0 left-0 bg-white " : ""
+        }`}>
             {/* for large devices */}
             <div className="flex items-center justify-between">
                 {/* for logo */}
@@ -59,7 +61,7 @@ const Navbar = () => {
 
             {/* menu items for small devices*/}
             {
-              isMenuOpen && <div className="mt-4 bg body rounded-lg text-white">
+              isMenuOpen && <div className="mt-4 bg-body p-4 rounded-lg text-white">
                 <a href="/" className="block py-2 px-4 cursor-pointer text-primary hover:text-gray-400">Home</a>
                   <a href="/" className="block py-2 px-4 cursor-pointer  hover:text-gray-400">Our Skills</a>
                   <a href="/" className="block py-2 px-4 cursor-pointer  hover:text-gray-400">About Us</a>
