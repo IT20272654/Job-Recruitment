@@ -56,6 +56,18 @@ const Navbar = () => {
                 <HiMenu/>
                 </button>
             </div>
+
+            {/* menu items for small devices*/}
+            {
+              isMenuOpen && <div className="mt-4 bg body rounded-lg text-white">
+                <a href="/" className="block py-2 px-4 cursor-pointer text-primary hover:text-gray-400">Home</a>
+                  <a href="/" className="block py-2 px-4 cursor-pointer  hover:text-gray-400">Our Skills</a>
+                  <a href="/" className="block py-2 px-4 cursor-pointer  hover:text-gray-400">About Us</a>
+                  <a href="/" className="block py-2 px-4 cursor-pointer  hover:text-gray-400">Portfolio</a>
+                  <a href="/" className="block py-2 px-4 cursor-pointer  hover:text-gray-400">Feedback</a>
+                  
+                  </div>
+            }
          </nav>
       </header>
     );
