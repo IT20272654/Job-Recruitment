@@ -22,22 +22,33 @@ const JobDetails = () => {
     }
 
   return (
-    <><div className='bg-color'>
+    <><div className='bg-image'>
     <table align='center'>
         <div className='max-w-screen-2xl container mx-auto xl:px-24 px-4 md:py-20 py-24'>
-            <h1 className='Heading'>We are hiring <span className='text-blue'>{job.jobTitle}</span> </h1>
-            <p className='text-lg text-black/70 mb-8'>Thousands of jobs in the computer, engineering and technology sectors are waiting for you.</p>
+        <br/><br/><br/><br/><br/><br/><br/>
+            <h1 className='JobHeading'>We are hiring<br/> <span className='text-blue'>{job.jobTitle}</span> </h1>
+            <p className='jobDescription'>Thousands of jobs in the computer, engineering and technology sectors are waiting for you.</p>
+            <table align='center'>
+            {/* <h2 className='jobDescription'>JobDetails: {id}</h2> */}
+            <br/>
+            <button className="px-40 py-4 bg-primary text-xl text-white rounded hover:bg-body hover:text-white transition-all duration-300" onClick={handdleApply}>Apply Now</button>
+            </table>
         </div>
     </table>
+       
+     
+         <footer class="sticky-footer">
 
+            <ul>
+                <li><a href="#">Home</a></li>
+                 <li><a href="#">Available Jobs</a></li>
+                 <li><a href="#">Post A Job</a></li>
+                 <li><a href="#">My Jobs</a></li>
+                 <li><a href="#">Contact Us</a></li>
+            </ul>
+        </footer>
         </div>
-        <div className='max-w-screen-2xl contailner mx-auto xl:px-24 px-4'>
-            <h2>JobDetails: {id}</h2>
-            
-
-            <button className='bg-blue px-8 py-2 text-white' onClick={handdleApply}>Apply Now</button>
-
-        </div></>
+        </>
   )
 }
 
