@@ -121,7 +121,7 @@ const Search = () => {
      <div class="line"></div>
      
      <div class = "text_and-icon">
-       <input type="text" class="search_text" id="search_text" placeholder="Search by Company, Keyword or the designation .."onChange={haddleInputChange}
+       <input type="text" class="search_text" id="search_text" placeholder="position here.."onChange={haddleInputChange}
                 value={query}/> 
             <i class="fas fa-search search_icon"></i>
               </div>
