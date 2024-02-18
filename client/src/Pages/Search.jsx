@@ -4,7 +4,8 @@ import Card from '../components/Card';
 import Jobs from './Jobs';
 import Sidebar from '../sidebar/Sidebar';
 import SideBarRight from '../sidebar/SideBarRight';
-
+import banner2 from "../assets/coverImage1.png";
+import banner1 from "../assets/coverImage2.png";
 
 
 const Search = () => {
@@ -192,6 +193,7 @@ const Search = () => {
                 {/* left side */}
                 <div className='bg-white p-4 rounded'>
                     <Sidebar haddleChange={haddleChange} haddleClick={haddleChange}/>
+                    <img src={banner1} alt="" className="w-full" />
                 </div>
 
                
@@ -229,6 +231,8 @@ const Search = () => {
                 {/* right side */}
                 <div className='bg-white p-4 rounded'>
                     <SideBarRight haddleChange={haddleChange} haddleClick={haddleChange}/>
+                    <br/><br/>
+                    <img src={banner2} alt="" className="w-full" />
                 </div>
                 </div>
 
