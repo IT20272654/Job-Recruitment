@@ -1,12 +1,12 @@
 [
     {
-        "id" : 1, "name" : "Ahuse", "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.", "image": "/src/assets/project-1.png"
+        "id" : 1, "name" : "Search Functionality", "description" : "Implement a search bar that enables users to find specific content or information quickly and easily.", "image": "/src/assets/project-1.jpg"
     },
     {
-        "id" : 2, "name" : "App Dashboard", "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.", "image": "/src/assets/project-2.png"
+        "id" : 2, "name" : "FAQ Section", "description" : "Create a Frequently Asked Questions section to address common queries and provide helpful information to users.", "image": "/src/assets/project-2.jpg"
     },
     {
-        "id" : 3, "name" : "Easy Rent", "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.", "image": "/src/assets/project-3.png"
+        "id" : 3, "name" : "Security Features", "description" : " Implement security measures such as login verification, and regular backups to protect user data and ensure a safe browsing experience.", "image": "/src/assets/project-3.jpg"
     }
 ]
 
