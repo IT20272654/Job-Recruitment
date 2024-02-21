@@ -1,28 +1,24 @@
-
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import './App.css'
-import About from './components/About'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import Home from './components/Home'
+import { Outlet } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Portfolio from './components/Portfolio'
-import Skills from './components/Skills'
-import Testimonial from './components/Testimonial'
+
+
 
 function App() {
-  
+  const [count, setCount] = useState(0)
 
   return (
-    <>
-    <Navbar/>
-    <Home/>
-    <Skills/>
-    <About/>
-    <Portfolio/>
-    <Testimonial/>
-    <Contact/>
-    <Footer/>
-    </>
+ 
+
+  <>
+  <Navbar/>
+  <Outlet/>
+  </>
+
+
   )
 }
 
