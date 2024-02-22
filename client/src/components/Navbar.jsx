@@ -1,36 +1,59 @@
-/* eslint-disable no-unused-vars */
-import React, { useState, useEffect } from "react";
-import logo from "../assets/logo.svg";
-import { HiMenu } from "react-icons/hi";
-import { Link } from "react-scroll";
+import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const haddleMunuToggler = () => {
+    setIsMenuOpen(!isMenuOpen)
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsSticky(true);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+const navItem = [
+  {path: "/", title: "Start a search"},
+  {path: "/my-job", title: "My Jobs"},
+  {path: "/salary", title: "Salary Estimate"},
+  {path: "/post-job", title: "Post A Job"},
+  {path: "/adduser", title: "Admin Add"},
+  {path: "/about", title: "About Us"},
+ 
+]
 
   return (
-    <header className="w-full fixed top-0 left-0 right-0">
-      
-    </header>
-  );
-};
+    <div>
+      <header className='max-w-screen-2xl mx-auto xl:px-24 px-4'>
+      <nav className='flex justify-between items-center py-6'>
+        <a href="/" className="flex items-center gap-2 text-2xl text-black">
+          <span>Job Eka</span>
+        </a>
+        {/* nav items for large devices*/}
+        <ul className='hidden md:flex gap-12'>
+          {
+            navItem.map(({path,title}) =>(
+              <li key={path} className="text-base text-primary">
+                <NavLink
+                    to={path}
+                    className={({ isActive }) => isActive  ? "active": ""}
+                  >
+                    {title}
+                </NavLink>
+              </li>
+            ))
+          }
+        </ul>
 
-export default Navbar;
+        {/* sign up and login button */}
+        <div>
+           <Link to="/login" className='py-2 px-5 border rounded'>Login</Link>
+           <Link to="/sign-up" className='py-2 px-5 border rounded bg-blue'>Sign up</Link>
+        </div>
+
+      {/* mobile menu */}
+
+
+      </nav>
+      </header>
+    </div>
+  )
+}
+
+export default Navbar
