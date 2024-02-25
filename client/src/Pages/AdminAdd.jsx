@@ -77,7 +77,7 @@ uploadTask.on('state_changed',
 return (
     <div>
         Picture of Bug : <input type="file" onChange={(e)=>handleImg(e)}/>
-        Name : <input type="text" value={name} onChange={(e)=>setName(e.target.value)}/>
+        Reporter Name : <input type="text" value={name} onChange={(e)=>setName(e.target.value)}/>
         Email : <input type="email" value={email} onChange={(e)=>setemail(e.target.value)} />
         Phone Number : <input type="text" value={Phone} onChange={(e)=>setphone(e.target.value)} />
         <input type="submit" value="Add the Contact" onClick={handleSubmit}/>
