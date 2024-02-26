@@ -6,11 +6,11 @@ const Salary = ({haddleChange,haddleClick}) => {
   return (
     <div>
         <h4 className='text-lg font-medium mb-2'>Salary</h4>
-        <div className='mb-4'>
+        {/* <div className='mb-4'>
             <Button onClickHaddler={haddleClick} value="" tittle="Hourly"/>
             <Button onClickHaddler={haddleClick} value="Monthly" tittle="Monthly"/>
             <Button onClickHaddler={haddleClick} value="Yearly" tittle="Yearly"/>
-        </div>
+        </div> */}
         <div>
         <label className='sidebar-label-container'>
                 <input
