@@ -109,25 +109,7 @@ const Search = () => {
            
 
 
-<table align='center'>         
-<section id="hero">
-<div class="search_box">
-   <div class="search">
-     <div class= "select_area">
-       <i class="fas fa-map-marker-alt map_icon"></i>
-       <div class="text">Search</div>
-     </div>
-     
-     <div class="line"></div>
-     
-     <div class = "text_and-icon">
-       <input type="text" class="search_text" id="search_text" placeholder="position here.."onChange={haddleInputChange}
-                value={query}/> 
-            <i class="fas fa-search search_icon"></i>
-              </div>
-        </div> </div> 
-        </section>
-        </table><br/>
+
 
 
 
@@ -185,15 +167,134 @@ const Search = () => {
   </li>
 </ul>  
 </table> */}
+<div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="jobSearchHeading">
+                            Featured Job Categories
+                        </h1>
+                    </div>
+                </div>
+<div class="our-services section-pad-t30">
+            <div>
+                {/* <!-- Section Tittle --> */}
+                
+                <div class="row d-flex justify-contnet-center">
+                    <table align='center' cellPadding={20}>
+                    <tr>  
+                    <td><div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-services text-center mb-30">
+                            <div class="services-ion">
+                                <span class="flaticon-tour"></span>
+                            </div>
+                            <div class="services-cap">
+                               <h5><a href="job_listing.html">Design & Creative</a></h5>
+                            </div>
+                        </div>
+                    </div></td>
+                    <td><div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-services text-center mb-30">
+                            <div class="services-ion">
+                                <span class="flaticon-cms"></span>
+                            </div>
+                            <div class="services-cap">
+                               <h5><a href="job_listing.html">Design & Development</a></h5>
+                            </div>
+                        </div>
+                    </div></td>
+                    <td><div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-services text-center mb-30">
+                            <div class="services-ion">
+                                <span class="flaticon-report"></span>
+                            </div>
+                            <div class="services-cap">
+                               <h5><a href="job_listing.html">Sales & Marketing</a></h5>
+                            </div>
+                        </div>
+                    </div></td>
+                    {/* <td><div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-services text-center mb-30">
+                            <div class="services-ion">
+                                <span class="flaticon-app"></span>
+                            </div>
+                            <div class="services-cap">
+                               <h5><a href="job_listing.html">Mobile Application</a></h5>
+                            </div>
+                        </div>
+                    </div></td> */}
+                    
+                    <td><div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-services text-center mb-30">
+                            <div class="services-ion">
+                                <span class="flaticon-helmet"></span>
+                            </div>
+                            <div class="services-cap">
+                               <h5><a href="job_listing.html">Construction</a></h5>
+                            </div>
+                        </div>
+                    </div></td>
+                    <td><div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-services text-center mb-30">
+                            <div class="services-ion">
+                                <span class="flaticon-high-tech"></span>
+                            </div>
+                            <div class="services-cap">
+                               <h5><a href="job_listing.html">Information Technology</a></h5>
+                            </div>
+                        </div>
+                    </div></td>
+                    {/* <td><div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-services text-center mb-30">
+                            <div class="services-ion">
+                                <span class="flaticon-real-estate"></span>
+                            </div>
+                            <div class="services-cap">
+                               <h5><a href="job_listing.html">Real Estate</a></h5>
+                            </div>
+                        </div>
+                    </div></td> */}
+                    <td><div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-services text-center mb-30">
+                            <div class="services-ion">
+                                <span class="flaticon-content"></span>
+                            </div>
+                            <div class="services-cap">
+                               <h5><a href="job_listing.html">Content Writer</a></h5>
+                            </div>
+                        </div>
+                    </div></td>
+                    </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
 
 
-
+        <table align='center'>         
+<section id="hero">
+<div class="search_box">
+   <div class="search">
+     <div class= "select_area">
+       <i class="fas fa-map-marker-alt map_icon"></i>
+       <div class="text">Search</div>
+     </div>
+     
+     <div class="line"></div>
+     
+     <div class = "text_and-icon">
+       <input type="text" class="search_text" id="search_text" placeholder="position here.." onChange={haddleInputChange}
+                value={query}/> 
+            <i class="fas fa-search search_icon"></i>
+              </div>
+        </div> </div> 
+        </section>
+        </table><br/><br/>
 
             <div className='bg-[#FAFAFA] md:grid grid-cols-4 gap-8 lg:24 px-4 py-12'>
                 {/* left side */}
                 <div className='bg-white p-4 rounded'>
                     <Sidebar haddleChange={haddleChange} haddleClick={haddleChange}/>
-                    <img src={banner1} alt="" className="w-full" />
+                    <SideBarRight haddleChange={haddleChange} haddleClick={haddleChange}/>
+                    {/* <img src={banner1} alt="" className="w-full" /> */}
                 </div>
 
                
@@ -201,7 +302,7 @@ const Search = () => {
 
 
                 {/* job side */}
-                <div className='col-span-2 bg-white p-4 rounded-sm'>
+                <div className='col-span-3 bg-white p-4 rounded-sm'>
                 <div className='flex justify-start md:flex-row flex-col md:gap-0 gap-4'>
                 <div className='flex md:rounded-s-md rounded shadow-sm ring-2 ring-inset ring-gray-400 focus-within:ring-2 focus-within:ring-inset  md:w-1/7 w-full'>
                 {/* <input type="text" name="title" id="title" placeholder='What position are you looking for?' className='block flex-1 border-0 bg-transparent py-1.5 pl-8 text-gray-900 placeholder:text-black-400 focus:right-0 sm:text-sm sm:leading-6'onChange={haddleInputChange}
@@ -217,7 +318,18 @@ const Search = () => {
 
                 {/* Pages numbers */}
 
-                  {
+                      
+                </div>
+
+                {/* right side */}
+                {/* <div className='bg-white p-4 rounded'>
+                    <SideBarRight haddleChange={haddleChange} haddleClick={haddleChange}/>
+                  
+                    <img src={banner2} alt="" className="w-full" />
+                </div> */}
+                </div>
+                <table align='center'>
+                {
                     result.length > 0 ? (
                         <div className='flex justify-center mt-4 space-x-8'>
                             <button onClick={prevPage} disabled = {currentPage ==1} className='hover:underline'>Previous</button>
@@ -225,17 +337,8 @@ const Search = () => {
                             <button onClick={nextPage} disabled = {currentPage == Math.ceil(filteredItems.length / itemsPerPage)} className='hover:underline'>Next</button>
                         </div>
                     ) : ""
-                  }     
-                </div>
-                
-                {/* right side */}
-                <div className='bg-white p-4 rounded'>
-                    <SideBarRight haddleChange={haddleChange} haddleClick={haddleChange}/>
-                    <br/><br/>
-                    <img src={banner2} alt="" className="w-full" />
-                </div>
-                </div>
-
+                  } 
+                  </table>
                 <footer class="sticky-footer">
                 <ul>
                   <li><a href="#">Home</a></li>
