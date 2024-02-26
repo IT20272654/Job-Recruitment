@@ -53,7 +53,7 @@ const PostJob = () => {
             // </div>
            
             <div className=""><br/><br/>
-            <div className="form-color"><div className="max-w-screen-2xl container mx-auto xl:px-24 px-4"> <br/><div>
+            <div className=""><div className="max-w-screen-2xl container mx-auto xl:px-24 px-4"> <br/><div>
            
             
 
@@ -67,17 +67,17 @@ const PostJob = () => {
 
     {/* Job posting form */}
       <div className="md:w-2/3 mx-auto mb-20">
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+      <form onSubmit={handleSubmit(onSubmit)} className="jobPostForm">
          
           <div className="flex flex-col sm:flex-row gap-8 items-center mb-8">
             <div className="sm:w-1/2 w-full">
               <label htmlFor="minPrice" className="text-base text-headingcolor w-full">Job Title</label>
-              <input type="text" {...register("jobTitle")} className="block border border-primary rounded-lg py-2 mt-2 w-full" />
+              <input type="text" {...register("jobTitle")} className="block border border-primary rounded-lg py-2 mt-2 w-full" required/>
             </div>
 
             <div className="sm:w-1/2 w-full">
               <label htmlFor="maxPrice" className="text-base text-headingcolor w-full">Company Name</label>
-              <input type="text"{...register("companyName")} className="block border border-primary rounded-lg py-2 mt-2 w-full" />
+              <input type="text"{...register("companyName")} className="block border border-primary rounded-lg py-2 mt-2 w-full" required/>
             </div>
           </div>
 
@@ -85,22 +85,27 @@ const PostJob = () => {
             <div className="sm:w-1/2 w-full">
               <label htmlFor="jobTitle" className="text-base text-headingcolor w-full">Minimum Salary</label>
               <input type="text" {...register("minPrice")} 
-              className="block border border-primary rounded-lg py-2 mt-2 w-full" />
+              className="block border border-primary rounded-lg py-2 mt-2 w-full" required/>
             </div>
 
             <div className="sm:w-1/2 w-full">
               <label htmlFor="companyName" className="text-base text-headingcolor w-full">Maximum Salary</label>
-              <input type="text" {...register("maxPrice")} className="block border border-primary rounded-lg py-2 mt-2 w-full" />
+              <input type="text" {...register("maxPrice")} className="block border border-primary rounded-lg py-2 mt-2 w-full" required/>
             </div>
           </div>
 
           <div className="w-full mb-8">
-            <label htmlFor="salaryType" className="text-base text-headingcolor w-full">Salary Type</label>
+            <label htmlFor="salaryType" className="text-base text-headingcolor w-full">Category</label>
             <select {...register("salaryType")} className="block border border-primary rounded-lg py-2 px-2 mt-2 w-full">
-            <option value="">Choose Your Type</option>
-             <option value="Hourly">Hourly</option>
-             <option value="Monthly">Monthly</option>
-             <option value="Yearly">Yearly</option>
+            <option value="">Choose Category</option>
+            <option value="Design & Creative">Design & Creative</option>
+            <option value="Design & Development">Design & Development</option>
+            <option value="Sales & Marketing">Sales & Marketing</option>
+            <option value="Mobile Application">Mobile Application</option>
+            <option value="Construction">Construction</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Real Estate">Real Estate</option>
+            <option value="Content Writer">Content Writer</option>
             </select>
           </div>
 
@@ -116,21 +121,22 @@ const PostJob = () => {
             <option value="North Western Province">North Western Province</option>
             <option value="North Central Province">North Central Province</option>
             <option value="Uva Province">Uva Province</option>
-            <option value="Uva Province">Uva Province</option>
+            <option value="Sabaragamuwa Province">Sabaragamuwa Province</option>
             </select>
           </div>
+
 
           <div className="flex flex-col sm:flex-row gap-8 items-center mb-8">
             <div className="sm:w-1/2 w-full">
               <label htmlFor="postingDate" className="text-base text-headingcolor w-full">Job Posting Date</label>
               <input type="date" {...register("postingDate")}
-              className="block border border-primary rounded-lg py-2 mt-2 w-full" />
+              className="block border border-primary rounded-lg py-2 mt-2 w-full" required/>
             </div>
 
             <div className="sm:w-1/2 w-full">
               <label htmlFor="postingDate" className="text-base text-headingcolor w-full">Company Logo</label>
               <input type="url" placeholder={"Paste your company url logo here"} {...register("companyLogo")}
-              className="block border border-primary rounded-lg py-2 mt-2 w-full" />
+              className="block border border-primary rounded-lg py-2 mt-2 w-full" required/>
             </div>
           </div>
 
