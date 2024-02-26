@@ -66,11 +66,13 @@ const Location = ({haddleChange}) => {
             /> 
             <InputField
              haddleChange={haddleChange} 
-             value="Uva Province" 
-             tittle="Uva Province" 
+             value="Sabaragamuwa Province" 
+             tittle="Sabaragamuwa Province" 
              name="test"
             /> 
         </div>
+        
+        
     </div>
   )
 }
