@@ -4,9 +4,10 @@ import Card from '../components/Card';
 import Jobs from './Jobs';
 import Sidebar from '../sidebar/Sidebar';
 import SideBarRight from '../sidebar/SideBarRight';
-import banner from "../assets/banner.png";
+import banner from "../assets/banner.jpg";
 import logo from '../assets/logo.svg';
-
+import '../assets/css/style.css'
+import '../assets/css/flaticon.css'
 
 
 const Home = () => {
@@ -109,12 +110,12 @@ const Home = () => {
     <div className="mt-20 bg-bgShade" id="home">
         
       <div className="lg:px-12 px-4 flex flex-col md:flex-row-reverse items-center justify-between gap-5">
-      <div className="md:w-1/2 w-full">
-          <img src={banner} alt="" className="w-full" />
+      <div className="banner">
+          <img draggable="false" src={banner} alt="" className="w-full" />
         </div>
         {/* left side */}
         <div className="md:w-1/2 w-full mt-5">
-          <p className="text-4xl text-headingcolor font-semibold mb-5">Hey,</p>
+          {/* <p className="text-4xl text-headingcolor font-semibold mb-5">Hey,</p> */}
           <h1 className="font-bold text-headingcolor leading-snug md:leading-[116px] mb-5"><h1 className='Heading'>Find your<br/> <span className='text-blue'>New Job</span> today...</h1>
            
           </h1>
@@ -125,11 +126,11 @@ const Home = () => {
           <button className="px-8 py-4 bg-primary text-xl text-white rounded hover:bg-body hover:text-white transition-all duration-300">View Available Jobs</button>
           </a>
         </div>
-        {/* rigth side */}
+      
         
       </div>
 
-    
+
     <footer class="sticky-footer">
 
         <ul>
