@@ -14,7 +14,7 @@ const EmployeeType = ({haddleChange}) => {
                  id="test" value="" 
                  onChange={haddleChange} 
                  />
-                <span className='checkmark'></span>Any Experience
+                <span className='checkmark'></span>Any Time
             </label>
             <InputField
              haddleChange={haddleChange} 
