@@ -26,9 +26,8 @@ const navItem = [
 
       <header className='cardd'>
       <nav className='flex justify-between items-center py-6'>
-        <a href="/" className="flex items-center gap-2 text-2xl text-black">
-        <a href="/"><img src={logo} alt="" /></a>
-        </a>
+        <img draggable="false" src={logo} alt="" />
+        
         
         {/* nav items for large devices*/}
         <ul className='hidden md:flex gap-12'>
@@ -47,13 +46,13 @@ const navItem = [
         </ul>
 
         {/* sign up and login button */}
-        {/* <div>
-           <Link to="/login" className='px-8 py-3 bg-primary text-xl text-white rounded hover:bg-body hover:text-white transition-all duration-300'>Login</Link>
+         <div>
+           <Link to="/login" className='px-8 py-3 bg-primary text-xl text-white rounded hover:bg-body hover:text-white transition-all duration-300'>Log in</Link>
            
-        </div> */}
-        <div>
+        </div> 
+        {/* <div>
         <Link to="/sign-up" className='px-8 py-3 bg-primary text-xl text-white rounded hover:bg-body hover:text-white transition-all duration-300'>Sign up</Link>
-        </div>
+        </div> */}
       {/* mobile menu */}
 
 
