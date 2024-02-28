@@ -4,6 +4,8 @@ import CreatableSelect from 'react-select/creatable';
 
 const PostJob = () => {
 
+
+  
         const [selectedOption,setSelectedOption] = useState(null);
 
         const {
@@ -12,6 +14,8 @@ const PostJob = () => {
             formState: { errors },
           } = useForm()
         
+
+          
           const onSubmit = (data) => {
             data.skills=selectedOption;
             //console.log(data)
@@ -101,10 +105,10 @@ const PostJob = () => {
             <option value="Design & Creative">Design & Creative</option>
             <option value="Design & Development">Design & Development</option>
             <option value="Sales & Marketing">Sales & Marketing</option>
-            <option value="Mobile Application">Mobile Application</option>
+            {/* <option value="Mobile Application">Mobile Application</option> */}
             <option value="Construction">Construction</option>
             <option value="Information Technology">Information Technology</option>
-            <option value="Real Estate">Real Estate</option>
+            {/* <option value="Real Estate">Real Estate</option> */}
             <option value="Content Writer">Content Writer</option>
             </select>
           </div>
