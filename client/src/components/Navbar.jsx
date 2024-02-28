@@ -14,15 +14,12 @@ const navItem = [
   {path: "/", title: "Home"},
   {path: "/Search", title: "Available Jobs"},
   {path: "/post-job", title: "Post A Job"},
-  {path: "/my-job", title: "My Jobs"},
   {path: "/contact-us", title: "Contact Us"},
+  {path: "/about-us", title: "About Us"},
 ]
 
   return (
     <div>
-
-      
-
 
       <header className='cardd'>
       <nav className='flex justify-between items-center py-6'>
