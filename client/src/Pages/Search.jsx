@@ -6,7 +6,8 @@ import Sidebar from '../sidebar/Sidebar';
 import SideBarRight from '../sidebar/SideBarRight';
 import banner2 from "../assets/coverImage1.png";
 import banner1 from "../assets/coverImage2.png";
-
+import Button from '../sidebar/Button'
+import InputField from '../components/InputField'
 
 const Search = () => {
     const [selectedCategory, setSelectedCategory] = useState(null);
@@ -187,7 +188,8 @@ const Search = () => {
                                 <span class="flaticon-tour"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Design & Creative</a></h5>
+                               {/* <h5><a href="job_listing.html">Design & Creative</a></h5> */}
+                               <Button onClickHaddler={haddleClick} value="Design & Creative" tittle="Design & Creative"/>
                             </div>
                         </div>
                     </div></td>
@@ -197,7 +199,8 @@ const Search = () => {
                                 <span class="flaticon-cms"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Design & Development</a></h5>
+                               {/* <h5><a href="job_listing.html">Design & Development</a></h5> */}
+                               <Button onClickHaddler={haddleClick} value="Design & Development" tittle="Design & Development"/>
                             </div>
                         </div>
                     </div></td>
@@ -207,7 +210,8 @@ const Search = () => {
                                 <span class="flaticon-report"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Sales & Marketing</a></h5>
+                               {/* <h5><a href="job_listing.html">Sales & Marketing</a></h5> */}
+                               <Button onClickHaddler={haddleClick} value="Sales & Marketing" tittle="Sales & Marketing"/>
                             </div>
                         </div>
                     </div></td>
@@ -228,7 +232,8 @@ const Search = () => {
                                 <span class="flaticon-helmet"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Construction</a></h5>
+                               {/* <h5><a href="job_listing.html">Construction</a></h5> */}
+                               <Button onClickHaddler={haddleClick} value="Construction" tittle="Construction"/>
                             </div>
                         </div>
                     </div></td>
@@ -238,7 +243,8 @@ const Search = () => {
                                 <span class="flaticon-high-tech"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Information Technology</a></h5>
+                               {/* <h5><a href="job_listing.html">Information Technology</a></h5> */}
+                               <Button onClickHaddler={haddleClick} value="Information Technology" tittle="Information Technology"/>
                             </div>
                         </div>
                     </div></td>
@@ -258,7 +264,9 @@ const Search = () => {
                                 <span class="flaticon-content"></span>
                             </div>
                             <div class="services-cap">
-                               <h5><a href="job_listing.html">Content Writer</a></h5>
+                               {/* <h5><a href="job_listing.html">Content Writer</a></h5> */}
+                               <Button onClickHaddler={haddleClick} value="Content Writer" tittle="Content Writer"/>
+
                             </div>
                         </div>
                     </div></td>
@@ -281,7 +289,7 @@ const Search = () => {
      <div class="line"></div>
      
      <div class = "text_and-icon">
-       <input type="text" class="search_text" id="search_text" placeholder="position here.." onChange={haddleInputChange}
+       <input autoComplete="off" type="text" class="search_text" id="search_text" placeholder="position here.." onChange={haddleInputChange}
                 value={query}/> 
             <i class="fas fa-search search_icon"></i>
               </div>
