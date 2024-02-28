@@ -42,8 +42,8 @@ const Contact = () => {
     <>
     
     <table align='center'>
-    <div className='container'>
-        <div className='contact_box'>
+     <div className='ContactUs_container'>
+        <div className='ContactUs_contact_box'>
             
             <form method='POST'>
                 <h1 align='center' className='contactUs'><b>Contact US</b></h1>
@@ -57,8 +57,8 @@ const Contact = () => {
             </form>
             
         </div>
-        </div>
-        </table>
+     </div>
+    </table>
     
     </>
   )
