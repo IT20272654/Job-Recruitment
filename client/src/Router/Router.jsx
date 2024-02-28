@@ -4,6 +4,7 @@ import Home from "../Pages/Home";
 import AdminAdd from "../Pages/AdminAdd";
 import UserHome from "../Pages/UserHome";
 import About from "../Pages/About";
+import ContactUs from "../Pages/ContactUs";
 
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
@@ -31,6 +32,7 @@ const router = createBrowserRouter([
         { path: "/", element:<Home></Home> },
         { path: "/adduser", element:<AdminAdd></AdminAdd> },
         { path: "/userhome", element:<UserHome></UserHome> },
+        { path: "/contact", element:<ContactUs></ContactUs> },
         { path: "/about", element:<About></About> }
       ]
     },
