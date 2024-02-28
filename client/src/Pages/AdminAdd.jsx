@@ -4,6 +4,9 @@ import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/
 import { getDatabase, ref as refdata , set } from "firebase/database";
 import { v4 } from 'uuid';
 
+import '../assets/css/Bug.css'
+
+
 
 function AdminAdd() {
    const [name,setName] = useState('')
@@ -74,15 +77,24 @@ uploadTask.on('state_changed',
 
   }
 
-return (
-    <div>
-        Screen Shot of Bug : <input type="file" onChange={(e)=>handleImg(e)}/>
-        Reporter Name : <input type="text" value={name} onChange={(e)=>setName(e.target.value)}/>
-        Reporter Email : <input type="email" value={email} onChange={(e)=>setemail(e.target.value)} />
-        Phone Number : <input type="text" value={Phone} onChange={(e)=>setphone(e.target.value)} />
-        <input type="submit" value="Add the Contact" onClick={handleSubmit}/>
-    </div>
+  return (
+    <form className="BUGadmin-form">
+      <h1 className="BUGform-heading">Bug Report Form</h1>
+      <div className="BUGform-group">
+          <label>Screen Shot of the Bug:</label>
+          <input type="file" onChange={(e)=>handleImg(e)} className="BUGform-input"/>
+          <label>Reporter Name:</label>
+          <input type="text" value={name} onChange={(e)=>setName(e.target.value)} className="BUGform-input"/>
+          <label>Reporter Email:</label>
+          <input type="email" value={email} onChange={(e)=>setemail(e.target.value)} className="BUGform-input"/>
+          <label>Phone Number:</label>
+          <input type="text" value={Phone} onChange={(e)=>setphone(e.target.value)} className="BUGform-input"/>
+          <input type="submit" value="Send the Bug" onClick={handleSubmit} className="BUGform-submit"/>
+      </div>
+    </form>
   )
+  
+  
 }
 
 export default AdminAdd
