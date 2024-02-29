@@ -15,6 +15,7 @@ const navItem = [
   {path: "/Search", title: "Available Jobs"},
   {path: "/post-job", title: "Post A Job"},
   {path: "/contact-us", title: "Contact Us"},
+  {path: "/addUser", title: "Report Bug"},
   {path: "/about-us", title: "About Us"},
 ]
 
@@ -44,8 +45,7 @@ const navItem = [
 
         {/* sign up and login button */}
          <div>
-           <Link to="/login" className='px-8 py-3 bg-primary text-xl text-white rounded hover:bg-body hover:text-white transition-all duration-300'>Log in</Link>
-           
+         <Link to="/login" className='login-button-home'>Log in</Link>
         </div> 
         {/* <div>
         <Link to="/sign-up" className='px-8 py-3 bg-primary text-xl text-white rounded hover:bg-body hover:text-white transition-all duration-300'>Sign up</Link>
