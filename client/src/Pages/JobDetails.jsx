@@ -27,27 +27,21 @@ const JobDetails = () => {
         <div className='max-w-screen-2xl container mx-auto xl:px-24 px-4 md:py-20 py-24'>
         <br/><br/><br/><br/><br/><br/><br/>
             <h1 className='JobHeading'>We are hiring<br/> <span className='text-blue'>{job.jobTitle}</span> </h1>
-            <p className='jobDescription'>Thousands of jobs in the computer, engineering and technology sectors are waiting for you.</p>
+            {/* <p className='jobDescription'>Thousands of jobs in the computer, engineering and technology sectors are waiting for you.</p> */}
+            <table align='center'>
+            <p className='jobDescription'>{job.description}</p>
+            </table>
             <table align='center'>
             {/* <h2 className='jobDescription'>JobDetails: {id}</h2> */}
             <br/>
-            <button className="px-40 py-4 bg-primary text-xl text-white rounded hover:bg-body hover:text-white transition-all duration-300" onClick={handdleApply}>Apply Now</button>
+            {/* <button className="px-40 py-4 bg-primary text-xl text-white rounded hover:bg-body hover:text-white transition-all duration-300" onClick={handdleApply}>Apply Now</button> */}
+            <a href='/ApplyJob'><button className='home-submit'>Apply Now</button></a>
             </table>
         </div>
     </table>
        
      
-    <footer class="sticky-footer">
-          <ul>
-             <li><a href="/">Home</a></li>
-             <li><a href="/Search">Available Jobs</a></li>
-             <li><a href="/post-job">Post A Job</a></li>
-             <li><a href="/contact">Contact Us</a></li>
-             <li><a href="/bugReport">Report Bugs</a></li>
-             <li><a href="/about">About Us</a></li>
-         </ul>
-      </footer>
-      <br/><br/><br/>
+   
         </div>
         </>
   )
