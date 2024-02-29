@@ -17,7 +17,7 @@ const Login = () => {
 
   const from = location.state?.from?.pathname || "/";
 
-  // login with google
+  // signup with google
   const handleRegister = () => {
     signUpWithGmail()
       .then((result) => {
@@ -27,7 +27,7 @@ const Login = () => {
       .catch((error) => console.log(error));
   };
 
-  // login with email password
+  // login with email  and password
   const handleLogin = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -50,7 +50,7 @@ const Login = () => {
   };
 
   return (
-    
+    //login form
     <table align="center">
       <br/><br/>
     <div className="loginform">
