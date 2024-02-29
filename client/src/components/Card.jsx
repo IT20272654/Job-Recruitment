@@ -24,7 +24,7 @@ import {FiCalendar, FiCamera, FiClock, FiDollarSign, FiMapPin} from "react-icons
                 
                 <br/>
                 {/* <p className='text-base text-primary/'>{description}</p> */}
-                <button className="px-8 py-2 bg-primary text-xl text-white rounded hover:bg-body hover:text-white transition-all duration-300" >View More</button>
+                <button className="jobPost-submit" >View More</button>
 
 
             </div>
