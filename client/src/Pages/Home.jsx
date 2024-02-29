@@ -123,7 +123,7 @@ const Home = () => {
           Find your dream job with our recruitment website. Browse and apply for opportunities across all industries, from entry-level to executive positions. Join us and start your journey to success today!
           </p>
           <a href="/Search">
-          <button className="px-8 py-4 bg-primary text-xl text-white rounded hover:bg-body hover:text-white transition-all duration-300">View Available Jobs</button>
+          <button className="home-submit">View Available Jobs</button>
           </a>
         </div>
       
@@ -131,16 +131,17 @@ const Home = () => {
       </div>
 
 
-    <footer class="sticky-footer">
-
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Available Jobs</a></li>
-            <li><a href="#">Post A Job</a></li>
-            <li><a href="#">My Jobs</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-    </footer><br/><br/><br/>
+      <footer class="sticky-footer">
+          <ul>
+             <li><a href="/">Home</a></li>
+             <li><a href="/Search">Available Jobs</a></li>
+             <li><a href="/post-job">Post A Job</a></li>
+             <li><a href="/contact">Contact Us</a></li>
+             <li><a href="/bugReport">Report Bugs</a></li>
+             <li><a href="/about">About Us</a></li>
+         </ul>
+      </footer>
+      <br/><br/><br/>
     </div>
     
     )
