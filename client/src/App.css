@@ -312,7 +312,7 @@ footer ul li a:hover{
 
 footer{
   width: 100%;
-  background: #000000;
+  background: #3575E2;
   color: #fff; 
   display: grid;
   place-items: center;
@@ -355,7 +355,7 @@ body{
 }
 
 .select_area {
-  color : #4451FE;
+  color : #3575E2;
   display : flex;
   align-items: center;
   font-family: 'Roboto', sans-serif; line-height:24px;
@@ -415,3 +415,36 @@ button {
 } 
 
 
+.jobPost-submit {
+  padding: 10px 20px;
+  width: 250px;
+  background-color: #3575E2;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.home-submit {
+  padding: 20px 20px;
+  width: 350px;
+  background-color: #3575E2;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+
+.login-button-home {
+  padding: 10px 40px;
+  width: 350px;
+  background-color: #3575E2;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
