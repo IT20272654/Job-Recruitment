@@ -181,7 +181,7 @@ const PostJob = () => {
           </div>
          
           <div className="w-36 mx-auto border rounded-lg">
-          <input type="submit" value="Submit" className="btn-primary py-3 bg-primary px-8 text-white font-medium rounded-b-md cursor-pointer inline-block w-full "/>
+          <input type="submit" value="Submit" className="jobPost-submit"/>
           </div>
           <br/><br/>
         </form>
@@ -190,15 +190,17 @@ const PostJob = () => {
       </div>
     
       </div>
-       <footer class="sticky-footer">
-         <ul>
-           <li><a href="#">Home</a></li>
-           <li><a href="#">Services</a></li>
-           <li><a href="#">Portfolio</a></li>
-           <li><a href="#">Articles</a></li>
-           <li><a href="#">Contact</a></li>
+      <footer class="sticky-footer">
+          <ul>
+             <li><a href="/">Home</a></li>
+             <li><a href="/Search">Available Jobs</a></li>
+             <li><a href="/post-job">Post A Job</a></li>
+             <li><a href="/contact">Contact Us</a></li>
+             <li><a href="/bugReport">Report Bugs</a></li>
+             <li><a href="/about">About Us</a></li>
          </ul>
-        </footer><br/><br/><br/>
+      </footer>
+      <br/><br/><br/>
        </div>
       </div>
         )
