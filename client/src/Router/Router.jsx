@@ -4,7 +4,7 @@ import Home from "../Pages/Home";
 import JobPostingData from "../sidebar/JobPostingData";
 import PostJob from "../Pages/PostJob";
 import JobDetails from "../Pages/JobDetails";
-import About from "../Pages/About";
+import ApplyJob from "../Pages/ApplyJob";
 import Search from "../Pages/Search";
 
 
@@ -25,6 +25,9 @@ const router = createBrowserRouter([
         },
         { path: "/Search", 
         element:<Search/>
+        },
+        { path: "/ApplyJob", 
+        element:<ApplyJob/>
         }
       ],
     },
