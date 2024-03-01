@@ -37,7 +37,7 @@ const Signup = () => {
 
     if (password !== confirmPassword) {
       // Passwords do not match, set an error message
-      setErrorMessage(<div className="Erormessage">Passwords doesn't match! Please provide correct password</div>);
+      setErrorMessage("Passwords doesn't match! Please provide correct password");
     } else {
       // Passwords match, proceed with signup logic
       setErrorMessage(""); // Clear the error message
