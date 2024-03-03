@@ -15,7 +15,7 @@ const navItem = [
   {path: "/Search", title: "Available Jobs"},
   {path: "/post-job", title: "Post A Job"},
   {path: "/contact-us", title: "Contact Us"},
-  {path: "/addUser", title: "Report Bug"},
+  {path: "/addUser", title: "Feedback Us"},
   {path: "/about-us", title: "About Us"},
 ]
 
