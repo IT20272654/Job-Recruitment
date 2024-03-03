@@ -227,7 +227,7 @@ li {
 }
 
 .JobHeading{
-  font-size: 100px;
+  font-size: 70px;
   text-align: center;
   font-weight: 800;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
@@ -518,3 +518,52 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+
+
+.cardDescription {
+  margin: 20px;
+  border: 1px solid #ededed;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  width: 700px;
+  height: 500px;
+  background-color: #f2f2f2;
+}
+
+.descriptionImage{
+  width: 200px;
+  border-radius: 15px;
+}
+
+.splitScreen {
+  height: 40vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+
+}
+.topPane {
+  grid-column: 1;
+  grid-row: 1;
+  padding-left: 50px;
+
+}
+
+.bottomPane {
+  grid-column: 2;
+  grid-row: 1;
+  padding-right: 50px;
+
+}
+
+.jobListCompanyImage{
+  width: 250px;
+  height: 250px;
+  border-radius: 15px;
+}
+
+
+
+
+
