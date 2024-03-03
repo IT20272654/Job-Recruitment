@@ -72,29 +72,30 @@ const PostJob = () => {
     {/* Job posting form */}
       <div className="md:w-2/3 mx-auto mb-20">
       <form onSubmit={handleSubmit(onSubmit)} className="jobPostForm">
-         
+      <h1 align='center' className='applyjobHeading'><b>Post Your Job Advertisement</b></h1>
+          
           <div className="flex flex-col sm:flex-row gap-8 items-center mb-8">
             <div className="sm:w-1/2 w-full">
-              <label htmlFor="minPrice" className="text-base text-headingcolor w-full">Job Title</label>
-              <input type="text" {...register("jobTitle")} className="block border border-primary rounded-lg py-2 mt-2 w-full" required/>
+              <label htmlFor="jobTitle" className="text-base text-headingcolor w-full">Job Title</label>
+              <input type="text" placeholder={"Enter position that you want to post..."} {...register("jobTitle")} className="block border border-primary rounded-lg py-2 px-2 mt-2 w-full" required/>
             </div>
 
             <div className="sm:w-1/2 w-full">
-              <label htmlFor="maxPrice" className="text-base text-headingcolor w-full">Company Name</label>
-              <input type="text"{...register("companyName")} className="block border border-primary rounded-lg py-2 mt-2 w-full" required/>
+              <label htmlFor="companyName" className="text-base text-headingcolor w-full">Company Name</label>
+              <input type="text" placeholder={"Enter company name here..."}{...register("companyName")} className="block border border-primary rounded-lg py-2 px-2 mt-2 w-full" required/>
             </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-8 items-center mb-8">
             <div className="sm:w-1/2 w-full">
               <label htmlFor="jobTitle" className="text-base text-headingcolor w-full">Minimum Salary</label>
-              <input type="text" {...register("minPrice")} 
-              className="block border border-primary rounded-lg py-2 mt-2 w-full" required/>
+              <input type="text" placeholder={"Ex: 80000"}{...register("minPrice")} 
+              className="block border border-primary rounded-lg py-2 px-2 mt-2 w-full" required/>
             </div>
 
             <div className="sm:w-1/2 w-full">
               <label htmlFor="companyName" className="text-base text-headingcolor w-full">Maximum Salary</label>
-              <input type="text" {...register("maxPrice")} className="block border border-primary rounded-lg py-2 mt-2 w-full" required/>
+              <input type="text" placeholder={"Ex: 1000000"} {...register("maxPrice")} className="block border border-primary rounded-lg py-2 px-2 mt-2 w-full" required/>
             </div>
           </div>
 
@@ -134,13 +135,13 @@ const PostJob = () => {
             <div className="sm:w-1/2 w-full">
               <label htmlFor="postingDate" className="text-base text-headingcolor w-full">Job Posting Date</label>
               <input type="date" {...register("postingDate")}
-              className="block border border-primary rounded-lg py-2 mt-2 w-full" required/>
+              className="block border border-primary rounded-lg py-2 px-2 mt-2 w-full" required/>
             </div>
 
             <div className="sm:w-1/2 w-full">
               <label htmlFor="postingDate" className="text-base text-headingcolor w-full">Company Logo</label>
               <input type="url" placeholder={"Paste your company url logo here"} {...register("companyLogo")}
-              className="block border border-primary rounded-lg py-2 mt-2 w-full" required/>
+              className="block border border-primary rounded-lg py-2 px-2 mt-2 w-full" required/>
             </div>
           </div>
 
@@ -154,7 +155,7 @@ const PostJob = () => {
             </select>
           </div>
 
-          <div className="w-full mb-8">
+           {/* <div className="w-full mb-8">
               <label htmlFor="skills" className="text-base text-headingcolor w-full">Required Skill Sets:</label>
               <CreatableSelect
                 defaultValue={selectedOption}
@@ -162,7 +163,12 @@ const PostJob = () => {
                 options={options}
                 isMulti
                 className="block border border-primary rounded-lg py-2 mt-2 w-full" />
-          </div>
+          </div> */}
+            <div className="w-full mb-8">
+              <label htmlFor="email" className="text-base text-headingcolor w-full">Company Email</label>
+              <input type="text" placeholder={"Enter your company email"} {...register("email")}
+              className="block border border-primary rounded-lg px-2 py-2 mt-2 w-full" />
+            </div>
 
           <div className="w-full mb-8">
             <label htmlFor="experienceLevel" className="text-base text-headingcolor w-full">Experience Level</label>
@@ -179,10 +185,9 @@ const PostJob = () => {
             <label htmlFor="description" className="text-base text-headingcolor w-full">Description</label>
             <textarea name="message" id="message" cols="30" rows="5" placeholder="Type your description..." {...register("description")}className="block border border-primary rounded-lg py-2 px-2 mt-2 w-full"></textarea>
           </div>
-         
-          <div className="w-36 mx-auto border rounded-lg">
+          <table align="center">
           <input type="submit" value="Submit" className="jobPost-submit"/>
-          </div>
+          </table> 
           <br/><br/>
         </form>
       </div>
