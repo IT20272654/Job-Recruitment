@@ -348,16 +348,17 @@ const Search = () => {
                   } 
                   </table>
                   <footer class="sticky-footer">
-          <ul>
-             <li><a href="/">Home</a></li>
-             <li><a href="/Search">Available Jobs</a></li>
-             <li><a href="/post-job">Post A Job</a></li>
-             <li><a href="/contact">Contact Us</a></li>
-             <li><a href="/bugReport">Report Bugs</a></li>
-             <li><a href="/about">About Us</a></li>
-         </ul>
-      </footer>
-      <br/><br/><br/>
+
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/Search">Available Jobs</a></li>
+    <li><a href="/post-job">Post A Job</a></li>
+    <li><a href="/contact">Contact Us</a></li>
+    <li><a href="/bugReport">Report Bugs</a></li>
+    <li><a href="/about">About Us</a></li>
+</ul>
+</footer><br/><br/><br/>
+                <br/><br/>
                 </div>
     )
 }
