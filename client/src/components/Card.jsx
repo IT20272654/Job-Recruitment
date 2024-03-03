@@ -9,7 +9,7 @@ import {FiCalendar, FiCamera, FiClock, FiDollarSign, FiMapPin} from "react-icons
 
    <section className='card'>
         <Link to = {`/job/${_id}`} className='flex gap-4 flex-col sm:flex-row items-start'>
-            <img draggable="false" src={companyLogo} alt="" />
+            <img draggable="false" className='jobListCompanyImage' src={companyLogo} alt="" />
             <div>
             <br/>
                 <h3 className='cardHeading'>{jobTitle}</h3>
@@ -18,13 +18,13 @@ import {FiCalendar, FiCamera, FiClock, FiDollarSign, FiMapPin} from "react-icons
                 <div className='text-primary/70 text-base flex flex-wrap gap-2 mb-2'>
                     <span className='flex items-center gap-2'><FiMapPin/>{jobLocation}</span>
                     <span className='flex items-center gap-2'><FiClock/>{employmentType}</span>
-                    <span className='flex items-center gap-2'><FiDollarSign/>{minPrice}-{maxPrice}</span>
+                    <span className='flex items-center gap-2'>Rs. {minPrice}-Rs. {maxPrice}</span>
                     <span className='flex items-center gap-2'><FiCalendar/>{postingDate}</span>
                 </div>
                 
                 <br/>
                 {/* <p className='text-base text-primary/'>{description}</p> */}
-                <button className="jobPost-submit" >View More</button>
+                <button className="login-button-home" >View More</button>
 
 
             </div>
