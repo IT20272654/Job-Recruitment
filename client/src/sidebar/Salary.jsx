@@ -23,28 +23,34 @@ const Salary = ({haddleChange,haddleClick}) => {
             </label>
             <InputField
              haddleChange={haddleChange} 
-             value={30} 
-             tittle="< 30000"
+             value={30000} 
+             tittle=" Rs. 30,000"
              name="test2"
              />
             <InputField
              haddleChange={haddleChange} 
-             value={50} 
-             tittle="< 50000"
+             value={50000} 
+             tittle=" Rs. 50,000"
              name="test2"
              />
             <InputField
              haddleChange={haddleChange} 
-             value={80} 
-             tittle="< 80000"
+             value={80000} 
+             tittle=" Rs. 80,000"
              name="test2"
              />
             <InputField
              haddleChange={haddleChange} 
-             value={100} 
-             tittle="< 100000"
+             value={100000} 
+             tittle=" Rs. 100,000"
              name="test2"
-             />             
+             />  
+             <InputField
+             haddleChange={haddleChange} 
+             value={120000} 
+             tittle=" Rs. 120,000"
+             name="test2"
+             />            
         </div>
     </div>
   )
