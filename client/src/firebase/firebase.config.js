@@ -5,15 +5,16 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBMkE_haAbT-yvQXcdVh3IcAZSrU2BV0tc",
-  authDomain: "job-portal-demo-8f1af.firebaseapp.com",
-  projectId: "job-portal-demo-8f1af",
-  storageBucket: "job-portal-demo-8f1af.appspot.com",
-  messagingSenderId: "679088066397",
-  appId: "1:679088066397:web:6615784cedb0e473c322b4"
+  apiKey: "AIzaSyD2toifFDUCdLt8CBvWFP7U_nQh0aP_A1o",
+  authDomain:"job-react-js.firebaseapp.com",
+  projectId: "job-react-js",
+  storageBucket:"job-react-js.appspot.com",
+  messagingSenderId: "126190225820",
+  appId: "1:126190225820:web:ad7fa35306ae07c19b2059",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 export default app;
+
