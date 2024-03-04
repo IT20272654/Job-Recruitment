@@ -31,7 +31,7 @@ const Contact = () => {
                 Name, Email, Subject, Message
             })
         }
-        const res = await fetch('https://contact-us-react-ab779-default-rtdb.firebaseio.com/Messages.json', option )
+        const res = await fetch('https://contact-us-react-ab779-default-rtdb.firebaseio.com/Contact_Us.json', option )
         console.log(res)
         if(res)
         {
