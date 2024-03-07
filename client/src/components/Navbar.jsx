@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -13,6 +14,7 @@ const navItem = [
   {path: "/my-job", title: "My Jobs"},
   {path: "/salary", title: "Salary Estimate"},
   {path: "/post-job", title: "Post A Job"},
+  {path: "/About", title: "About"},
 ]
 
   return (
